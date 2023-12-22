@@ -6,7 +6,7 @@ const createOrganizer = async (req) => {
   const { organizer, email, password, confirmPassword, name, role } = req.body;
 
   if (password !== confirmPassword) {
-    throw new BadRequestError("Password tidak sama");
+    throw new BadRequestError("Password tidak cocok");
   }
   const result = await Organizers.create({ organizer });
 
