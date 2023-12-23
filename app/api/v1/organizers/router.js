@@ -5,7 +5,6 @@ const {
   createCMSUser,
   getCMSUsers,
 } = require("./controller");
-
 const { authenticateUser } = require("../../../middlewares/auth");
 
 router.post("/organizers", createCMSOrganizer);
