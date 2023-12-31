@@ -28,10 +28,6 @@ const getAllOrders = async (req) => {
     .skip(limit * (page - 1));
 
   const count = await Orders.countDocuments(condition);
-  // console.log("condition : ", condition);
-  // console.log("count : ", count);
-
-  //page:2 / 1 = 2
 
   return { data: result, pages: Math.ceil(count / limit), total: count };
 };

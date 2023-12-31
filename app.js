@@ -5,7 +5,6 @@ const logger = require("morgan");
 
 const app = express();
 
-// router
 const categoriesRouter = require("./app/api/v1/categories/router");
 const imagesRouter = require("./app/api/v1/images/router");
 const talentsRouter = require("./app/api/v1/talents/router");
@@ -35,7 +34,7 @@ app.get("/", (req, res) => {
 
 app.use(`${v1}/cms`, imagesRouter);
 app.use(`${v1}/cms`, categoriesRouter);
-app.use(`${v1}/cms`, talentRouter);
+app.use(`${v1}/cms`, talentsRouter);
 app.use(`${v1}/cms`, eventsRouter);
 app.use(`${v1}/cms`, organizersRouter);
 app.use(`${v1}/cms`, authCMSRouter);

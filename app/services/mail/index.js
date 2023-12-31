@@ -6,7 +6,7 @@ const fs = require("fs");
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
-  secure: false, // true for 465, false for other ports
+  secure: false,
   auth: {
     user: gmail,
     pass: password,
@@ -30,7 +30,6 @@ const otpMail = async (email, data) => {
   }
 };
 
-// send invoice
 const invoiceMail = async (email, data) => {
   try {
     let template = fs.readFileSync("app/views/email/invoice.html", "utf-8");

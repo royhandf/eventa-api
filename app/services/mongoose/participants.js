@@ -15,7 +15,6 @@ const { invoiceMail } = require("../mail");
 const signupParticipant = async (req) => {
   const { firstName, lastName, email, password, role } = req.body;
 
-  // jika email dan status tidak aktif
   let result = await Participant.findOne({
     email,
     status: "tidak aktif",
@@ -126,10 +125,6 @@ const getAllOrders = async (req) => {
   return result;
 };
 
-/**
- * Tugas Send email invoice
- * TODO: Ambil data email dari personal detail
- *  */
 const checkoutOrder = async (req) => {
   const { event, personalDetail, payment, tickets } = req.body;
 
@@ -161,13 +156,6 @@ const checkoutOrder = async (req) => {
         }
       }
     });
-    // console.log("tic.sumTicket", tic.sumTicket);
-    // console.log("ticket.type", ticket.type);
-    // console.log("ttic.ticketCategories.type", tic.ticketCategories.type);
-    // console.log("totalOrderTicket", totalOrderTicket);
-    // console.log("totalPay", totalPay);
-
-    // console.log("checkingEvent", checkingEvent);
   });
 
   await checkingEvent.save();
