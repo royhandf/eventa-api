@@ -1,4 +1,4 @@
-# Bootcamp MERN 2022 - Spesifikasi API
+# Spesifikasi API
 
 ## Endpoint list
 
@@ -73,16 +73,16 @@ Response body :
 
 ```json
 {
-		"data": [
-				{
-						"_id": "62aed625829754800e34a91b",
-						"name": "Pakaian & Perhiasan",
-            "organizer" : {
-									"_id" : "ObjectID",
-									"name" : "string"
-						}
-				}
-		]
+	"data": [
+			{
+				"_id": "62aed625829754800e34a91b",
+				"name": "Pakaian & Perhiasan",
+            			"organizer" : {
+						"_id" : "ObjectID",
+						"name" : "string"
+			      	}
+			}
+	]
 }
 ```
 
@@ -96,15 +96,15 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aed625829754800e34a91b",
-				"name": "Pakaian & Perhiasan",
-        "organizer" : {
+	"data": {
+			"_id": "62aed625829754800e34a91b",
+			"name": "Pakaian & Perhiasan",
+			"organizer" : {
 						"_id" : "ObjectID",
 						"name" : "string"
-			  },
-				"__v": 0
-		}
+		      	},
+			"__v": 0
+	}
 }
 ```
 
@@ -118,8 +118,8 @@ Request Body :
 
 ```json
 {
-		"name": "elektronik",
-    "organizer": <OrganizerID>
+	"name": "elektronik",
+	"organizer": <OrganizerID>
 }
 ```
 
@@ -127,12 +127,12 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aff8a8899899ae1dd44e4c",
-				"name": "elektronik",
-        "organizer": <OrganizerID>,
-				"__v": 0
-		}
+	"data": {
+			"_id": "62aff8a8899899ae1dd44e4c",
+			"name": "elektronik",
+			"organizer": <OrganizerID>,
+			"__v": 0
+	}
 }
 ```
 
@@ -146,8 +146,8 @@ Request Body :
 
 ```json
 {
-		"name": "Buku",
-    "organizer": <OrganizerID>
+	"name": "Buku",
+	"organizer": <OrganizerID>
 }
 ```
 
@@ -155,12 +155,12 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aff8a8899899ae1dd44e4c",
-				"name": "Buku",
-        "organizer": <OrganizerID>,
-				"__v": 0
-		}
+	"data": {
+			"_id": "62aff8a8899899ae1dd44e4c",
+			"name": "Buku",
+			"organizer": <OrganizerID>,
+			"__v": 0
+	}
 }
 ```
 
@@ -174,14 +174,14 @@ Response body :
 
 ```json
 {
-		"data": [
-				{
-						"_id": "62aed625829754800e34a91b",
-						"name": "Pakaian & Perhiasan",
-            "organizer": <OrganizerID>,
-						"__v": 0
-				}
-		]
+	"data": [
+			{
+				"_id": "62aed625829754800e34a91b",
+				"name": "Pakaian & Perhiasan",
+				"organizer": <OrganizerID>,
+				"__v": 0
+			}
+	]
 }
 ```
 
@@ -198,20 +198,20 @@ Response body :
 ```json
 {
 	"data": [
-				{
-						"_id" : 827382138172,
-						"name" : "string",
-	          "role" : "string",
-						"organizer": {
-	                 "_id": "ObjectID",
-	                 "name": "string"
-	          },
-	          "image": {
-                 "_id": "ObjectID",
-                 "name": "string"
-            },
-				}
-		]
+			{
+				"_id" : 827382138172,
+				"name" : "string",
+			  	"role" : "string",
+				"organizer": {
+						 "_id": "ObjectID",
+						 "name": "string"
+			  	},
+		  		"image": {
+					 	"_id": "ObjectID",
+						"name": "string"
+            			},
+			}
+	]
 }
 ```
 
@@ -225,19 +225,19 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id" : 827382138172,
-				"name" : "string",
-        "role" : "string",
-        "organizer": {
-             "_id": "ObjectID",
-             "name": "string"
-        },
-        "image": {
-             "_id": "ObjectID",
-             "name": "string"
-        },
-		}
+	"data": {
+			"_id" : 827382138172,
+			"name" : "string",
+		        "role" : "string",
+		        "organizer": {
+		             "_id": "ObjectID",
+		             "name": "string"
+		        },
+		        "image": {
+		             "_id": "ObjectID",
+		             "name": "string"
+		        },
+	}
 }
 ```
 
@@ -251,10 +251,10 @@ Request Body :
 
 ```json
 {
-		"name": "string",
-    "role": "string",
-    "organizer": <OrganizerID>,
-		"image": <ImageID>,
+	"name": "string",
+	"role": "string",
+	"organizer": <OrganizerID>,
+	"image": <ImageID>,
 }
 ```
 
@@ -262,14 +262,14 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aff8a8899899ae1dd44e4c",
-				"name": "string",
-        "role": "string",
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-				"__v": 0
-		}
+	"data": {
+			"_id": "62aff8a8899899ae1dd44e4c",
+			"name": "string",
+		        "role": "string",
+		        "organizer": <OrganizerID>,
+		        "image": <ImageID>,
+			"__v": 0
+	}
 }
 ```
 
@@ -283,10 +283,10 @@ Request Body :
 
 ```json
 {
-		"name": "string",
-    "role": "string",
-    "organizer_id": <OrganizerID>,
-    "image": <ImageID>
+	"name": "string",
+	"role": "string",
+	"organizer_id": <OrganizerID>,
+	"image": <ImageID>
 }
 ```
 
@@ -294,13 +294,13 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aff8a8899899ae1dd44e4c",
-				"name": "Buku",
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-				"__v": 0
-		}
+	"data": {
+			"_id": "62aff8a8899899ae1dd44e4c",
+			"name": "Buku",
+		        "organizer": <OrganizerID>,
+		        "image": <ImageID>,
+			"__v": 0
+	}
 }
 ```
 
@@ -314,14 +314,14 @@ Response body :
 
 ```json
 {
-		"data": {
-				"_id": "62aed625829754800e34a91b",
-				"name": "string",
-        "role": "string",
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-				"__v": 0
-		}
+	"data": {
+			"_id": "62aed625829754800e34a91b",
+			"name": "string",
+			"role": "string",
+			"organizer": <OrganizerID>,
+			"image": <ImageID>,
+			"__v": 0
+	}
 }
 ```
 
@@ -345,13 +345,13 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id": "62aff8a8899899ae1dd44e4c",
-				"name": "string",
-        "createdAt": "2022-07-04T08:02:03.163Z",
-        "updatedAt": "2022-07-04T08:02:03.163Z",
-        "__v": 0
-		}
+	"data": {
+			"_id": "62aff8a8899899ae1dd44e4c",
+			"name": "string",
+			"createdAt": "2022-07-04T08:02:03.163Z",
+			"updatedAt": "2022-07-04T08:02:03.163Z",
+			"__v": 0
+	}
 }
 ```
 
@@ -367,51 +367,51 @@ Response body :
 
 ```json
 {
-		"data" : [
-				{
+	"data" : [
+			{
+				"_id" : "ObjectID",
+				"title" : "string",
+				"date" : "2022-12-07T00:00:00.000Z",
+				"about" : "string",
+				"tagline" : "string",
+				"keypoint" : [
+							"string", "string"
+				],
+				"venueName" : "string",
+				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+				"tickets": [
+                				{
+				                    "_id": "ObjectID",
+				                    "type": "String",
+				                    "price": Number,
+				                    "stock": Number,
+				                    "statusTicketCategory": Boolean,
+				                    "expiredAt": "2022-12-20T01:00:00.000Z"
+				                },
+            			],
+				"category" : {
 						"_id" : "ObjectID",
-						"title" : "string",
-						"date" : "2022-12-07T00:00:00.000Z",
-						"about" : "string",
-						"tagline" : "string",
-						"keypoint" : [
-									"string", "string"
-						],
-						"venueName" : "string",
-						"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-						"tickets": [
-                {
-                    "_id": "ObjectID",
-                    "type": "String",
-                    "price": Number,
-                    "stock": Number,
-                    "statusTicketCategory": Boolean,
-                    "expiredAt": "2022-12-20T01:00:00.000Z"
-                },
-            ],
-						"category" : {
-									"_id" : "ObjectID",
-									"name" : "string"
-	          }, 
-						"image" : {
-									"_id" : "ObjectID",
-									"name" : "string",
+						"name" : "string"
+				}, 
+				"image" : {
+						"_id" : "ObjectID",
+						"name" : "string",
+				},
+				"talent" : {
+						"_id" : "ObjectID",
+						"name": "string",
+					  	"role" : "String",
+					  "	image" : {
+								"_id" : "ObjectID",
+								"name" : "string",
 						},
-						"talent" : {
-									"_id" : "ObjectID",
-									"name" : "string",
-                  "role" : "String",
-                  "image" : {
-												"_id" : "ObjectID",
-												"name" : "string",
-									},
-						},
-						"organizer" : {
-							"_id" : "ObjectID",
-							"name" : "string"
-						},
-            "__v" : 0
-				}
+				},
+				"organizer" : {
+						"_id" : "ObjectID",
+						"name" : "string"
+				},
+            			"__v" : 0
+			}
 		]
 }
 ```
@@ -426,49 +426,49 @@ Response Body :
 
 ```json
 {
-		"data" : {
-				"_id" : "ObjectID",
-				"title" : "string",
-				"date" : "2022-12-07T00:00:00.000Z",
-				"about" : "string",
-				"tagline" : "string",
-				"keypoint" : [
-						"string", "string"
-				],
-				"venueName" : "string",
-				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-				"tickets": [
-            {
-                "_id": "ObjectID",
-                "type": "String",
-                "price": Number,
-                "stock": Number,
-                "statusTicketCategory": Boolean,
-                "expiredAt": "2022-12-20T01:00:00.000Z"
-            },
-        ],
-				"category" : {
-						"_id" : "ObjectID",
-						"name" : "string"
-        }, 
-				"image" : {
-						"_id" : "ObjectID",
-						"name" : "string",
-				},
-				"talent" : {
-						"_id" : "ObjectID",
-						"name" : "string",
-            "role" : "String",
-            "image" : {
-									"_id" : "ObjectID",
-									"name" : "string",
-						},
-				},
-				"organizer" : {
-						"_id" : "ObjectID",
-						"name" : "string"
-				},
-        "__v" : 0
+	"data" : {
+			"_id" : "ObjectID",
+			"title" : "string",
+			"date" : "2022-12-07T00:00:00.000Z",
+			"about" : "string",
+			"tagline" : "string",
+			"keypoint" : [
+					"string", "string"
+			],
+			"venueName" : "string",
+			"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+			"tickets": [
+				     {
+						"_id": "ObjectID",
+						"type": "String",
+						"price": Number,
+						"stock": Number,
+						"statusTicketCategory": Boolean,
+						"expiredAt": "2022-12-20T01:00:00.000Z"
+				    },
+			  ],
+			"category" : {
+					"_id" : "ObjectID",
+					"name" : "string"
+        		}, 
+			"image" : {
+					"_id" : "ObjectID",
+					"name" : "string",
+			},
+			"talent" : {
+					"_id" : "ObjectID",
+					"name" : "string",
+					"role" : "String",
+					"image" : {
+							"_id" : "ObjectID",
+							"name" : "string",
+					},
+			},
+			"organizer" : {
+					"_id" : "ObjectID",
+					"name" : "string"
+			},
+		        "__v" : 0
 		}
 }
 ```
@@ -483,26 +483,26 @@ Request Body :
 
 ```json
 {
-		"title": "Seminar tentang teknologi",
-    "date": "2022-12-07",
-    "about": "menjelaskan tentang teknologi",
-    "tagline": "SMK Bisa!!",
-    "keypoint": ["edan", "cerdas"],
-    "venueName": "Venue ABC",
-    "statusEvent": "draft",
-    "tickets" : [
-         {
-              "type": "String",
-              "price": Number,
-              "stock": Number,
-              "statusTicketCategory": Boolean,
-              "expiredAt": "2022-12-20T01:00:00.000Z"
-         },
-    ],
-    "category": <CategoryID>,
-    "talent": <TalentID>,
-    "organizer": <OrganizerID>,
-		"image": <ImageID>,
+	"title": "Seminar tentang teknologi",
+	"date": "2022-12-07",
+	"about": "menjelaskan tentang teknologi",
+	"tagline": "SMK Bisa!!",
+	"keypoint": ["edan", "cerdas"],
+	"venueName": "Venue ABC",
+	"statusEvent": "draft",
+	"tickets" : [
+	 {
+	      "type": "String",
+	      "price": Number,
+	      "stock": Number,
+	      "statusTicketCategory": Boolean,
+	      "expiredAt": "2022-12-20T01:00:00.000Z"
+	 },
+	],
+	"category": <CategoryID>,
+	"talent": <TalentID>,
+	"organizer": <OrganizerID>,
+	"image": <ImageID>,
 }
 ```
 
@@ -510,32 +510,32 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id" : "ObjectID",
-				"title" : "string",
-				"date" : "2022-12-07T00:00:00.000Z",
-				"about" : "string",
-				"tagline" : "string",
-				"keypoint" : [
-						"string", "string"
-				],
-				"venueName" : "string",
-				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-				"tickets": [
-            {
-                "_id": "ObjectID",
-                "type": "String",
-                "price": Number,
-                "stock": Number,
-                "statusTicketCategory": Boolean,
-                "expiredAt": "2022-12-20T01:00:00.000Z"
-            },
-        ],
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-        "category": <CategoryID>,
-        "talent": <TalentID>,
-				"__v": 0
+	"data": {
+			"_id" : "ObjectID",
+			"title" : "string",
+			"date" : "2022-12-07T00:00:00.000Z",
+			"about" : "string",
+			"tagline" : "string",
+			"keypoint" : [
+					"string", "string"
+			],
+			"venueName" : "string",
+			"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+			"tickets": [
+				    	{
+				                "_id": "ObjectID",
+				                "type": "String",
+				                "price": Number,
+				                "stock": Number,
+				                "statusTicketCategory": Boolean,
+				                "expiredAt": "2022-12-20T01:00:00.000Z"
+				    	},
+			   ],
+		        "organizer": <OrganizerID>,
+		        "image": <ImageID>,
+		        "category": <CategoryID>,
+		        "talent": <TalentID>,
+			"__v": 0
 		}
 }
 ```
@@ -550,26 +550,26 @@ Request Body :
 
 ```json
 {
-		"title": "Seminar tentang teknologi",
-    "date": "2022-12-07",
-    "about": "menjelaskan tentang teknologi",
-    "tagline": "SMK Bisa!!",
-    "keypoint": ["edan", "cerdas"],
-    "venueName": "Venue ABC",
-    "statusEvent": "draft",
-    "tickets" : [
-         {
-              "type": "String",
-              "price": Number,
-              "stock": Number,
-              "statusTicketCategory": Boolean,
-              "expiredAt": "2022-12-20T01:00:00.000Z"
-         },
-    ],
-    "category": <CategoryID>,
-    "talent": <TalentID>,
-    "organizer": <OrganizerID>,
-		"image": <ImageID>,
+	"title": "Seminar tentang teknologi",
+	"date": "2022-12-07",
+	"about": "menjelaskan tentang teknologi",
+	"tagline": "SMK Bisa!!",
+	"keypoint": ["edan", "cerdas"],
+	"venueName": "Venue ABC",
+	"statusEvent": "draft",
+	"tickets" : [
+	  {
+	      "type": "String",
+	      "price": Number,
+	      "stock": Number,
+	      "statusTicketCategory": Boolean,
+	      "expiredAt": "2022-12-20T01:00:00.000Z"
+	  },
+	],
+    	"category": <CategoryID>,
+    	"talent": <TalentID>,
+	"organizer": <OrganizerID>,
+	"image": <ImageID>,
 }
 ```
 
@@ -577,32 +577,32 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id" : "ObjectID",
-				"title" : "string",
-				"date" : "2022-12-07T00:00:00.000Z",
-				"about" : "string",
-				"tagline" : "string",
-				"keypoint" : [
-						"string", "string"
-				],
-				"venueName" : "string",
-				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-				"tickets": [
-            {
-                "_id": "ObjectID",
-                "type": "String",
-                "price": Number,
-                "stock": Number,
-                "statusTicketCategory": Boolean,
-                "expiredAt": "2022-12-20T01:00:00.000Z"
-            },
-        ],
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-        "category": <CategoryID>,
-        "talent": <TalentID>,
-				"__v": 0
+	"data": {
+			"_id" : "ObjectID",
+			"title" : "string",
+			"date" : "2022-12-07T00:00:00.000Z",
+			"about" : "string",
+			"tagline" : "string",
+			"keypoint" : [
+					"string", "string"
+			],
+			"venueName" : "string",
+			"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+			"tickets": [
+				    {
+					"_id": "ObjectID",
+					"type": "String",
+					"price": Number,
+					"stock": Number,
+					"statusTicketCategory": Boolean,
+					"expiredAt": "2022-12-20T01:00:00.000Z"
+				    },
+			  ],
+		        "organizer": <OrganizerID>,
+		        "image": <ImageID>,
+		        "category": <CategoryID>,
+		        "talent": <TalentID>,
+			"__v": 0
 		}
 }
 ```
@@ -617,32 +617,32 @@ Response Body :
 
 ```json
 {
-		"data": {
-				"_id" : "ObjectID",
-				"title" : "string",
-				"date" : "2022-12-07T00:00:00.000Z",
-				"about" : "string",
-				"tagline" : "string",
-				"keypoint" : [
-						"string", "string"
-				],
-				"venueName" : "string",
-				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-				"tickets": [
-            {
-                "_id": "ObjectID",
-                "type": "String",
-                "price": Number,
-                "stock": Number,
-                "statusTicketCategory": Boolean,
-                "expiredAt": "2022-12-20T01:00:00.000Z"
-            },
-        ],
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-        "category": <CategoryID>,
-        "talent": <TalentID>,
-				"__v": 0
+	"data": {
+			"_id" : "ObjectID",
+			"title" : "string",
+			"date" : "2022-12-07T00:00:00.000Z",
+			"about" : "string",
+			"tagline" : "string",
+			"keypoint" : [
+					"string", "string"
+			],
+			"venueName" : "string",
+			"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+			"tickets": [
+					{
+				                "_id": "ObjectID",
+				                "type": "String",
+				                "price": Number,
+				                "stock": Number,
+				                "statusTicketCategory": Boolean,
+				                "expiredAt": "2022-12-20T01:00:00.000Z"
+					 },
+			],
+			"organizer": <OrganizerID>,
+			"image": <ImageID>,
+			"category": <CategoryID>,
+			"talent": <TalentID>,
+			"__v": 0
 		}
 }
 ```
@@ -657,32 +657,30 @@ Response body :
 
 ```json
 {
-		"data": {
-				"_id" : "ObjectID",
-				"title" : "string",
-				"date" : "2022-12-07T00:00:00.000Z",
-				"about" : "string",
-				"tagline" : "string",
-				"keypoint" : [
-						"string", "string"
-				],
-				"venueName" : "string",
-				"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
-				"tickets": [
-            {
-                "_id": "ObjectID",
-                "type": "String",
-                "price": Number,
-                "stock": Number,
-                "statusTicketCategory": Boolean,
-                "expiredAt": "2022-12-20T01:00:00.000Z"
-            },
-        ],
-        "organizer": <OrganizerID>,
-        "image": <ImageID>,
-        "category": <CategoryID>,
-        "talent": <TalentID>,
-				"__v": 0
+	"data": {
+			"_id" : "ObjectID",
+			"title" : "string",
+			"date" : "2022-12-07T00:00:00.000Z",
+			"about" : "string",
+			"tagline" : "string",
+			"keypoint" : ["string", "string"],
+			"venueName" : "string",
+			"statusEvent" : enum(['DRAFT', 'PUBLISHED']),
+			"tickets": [
+            				{
+				                "_id": "ObjectID",
+				                "type": "String",
+				                "price": Number,
+				                "stock": Number,
+				                "statusTicketCategory": Boolean,
+				                "expiredAt": "2022-12-20T01:00:00.000Z"
+				            },
+			   ],
+		        "organizer": <OrganizerID>,
+		        "image": <ImageID>,
+		        "category": <CategoryID>,
+		        "talent": <TalentID>,
+			"__v": 0
 		}
 }
 ```
